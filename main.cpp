@@ -63,9 +63,10 @@ enum sf_t { SF7=7, SF8, SF9, SF10, SF11, SF12 };
  *******************************************************************************/
 
 // SX1272 - Raspberry connections
-int ssPin = 23;
-int dio0  = 24;
-int RST   = 18;
+int ssPin = 6; //CS  on FEATHER => GPIO25
+int dio0  = 7; //IRQ on FEATHER => GPIO4
+int RST   = 0; //RST on FEATHER => GPIO17
+
 
 // Set spreading factor (SF7 - SF12)
 sf_t sf = SF7;
