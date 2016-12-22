@@ -63,15 +63,15 @@ enum sf_t { SF7=7, SF8, SF9, SF10, SF11, SF12 };
  *******************************************************************************/
 
 // SX1272 - Raspberry connections
-int ssPin = 6;
-int dio0  = 7;
-int RST   = 0;
+int ssPin = 23;
+int dio0  = 24;
+int RST   = 18;
 
 // Set spreading factor (SF7 - SF12)
 sf_t sf = SF7;
 
 // Set center frequency
-uint32_t  freq = 868100000; // in Mhz! (868.1)
+uint32_t  freq = 434000000; // in Mhz! (868.1)
 
 // Set location
 float lat=0.0;
